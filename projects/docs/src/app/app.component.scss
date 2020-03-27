@@ -1,0 +1,35 @@
+.rect {
+  animation: movement 3s infinite;
+}
+
+@keyframes movement {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(400px, 0);
+  }
+}
+
+.stars {
+  animation: stars 3s infinite;
+}
+
+@keyframes stars {
+  0%, 100% {
+    clip-path: polygon(95px 95px, 120px 5px, 150px 95px, 235px
+    95px, 165px 150px, 195px 235px, 120px 180px, 50px 235px,75px
+    150px, 5px 95px)
+  }
+  50% {
+    clip-path: polygon(10px 10px, 120px 10px, 230px 10px, 230px
+    120px, 230px 180px, 230px 230px, 120px 230px, 10px 230px, 10px
+    180px, 10px 120px)
+  }
+}
+
+.loader {
+  padding: 3px;
+  border: 3px solid blue;
+  width: 500px;
+}
