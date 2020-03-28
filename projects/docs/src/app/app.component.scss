@@ -1,35 +1,39 @@
-.rect {
-  animation: movement 3s infinite;
+.text {
+  font-family: Raleway, sans-serif;
+  font-size: 1.5em;
 }
 
-@keyframes movement {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(400px, 0);
-  }
+.smaller-text {
+  font-size: 1em;
 }
 
-.stars {
-  animation: stars 3s infinite;
+.the-bar {
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
 }
 
-@keyframes stars {
-  0%, 100% {
-    clip-path: polygon(95px 95px, 120px 5px, 150px 95px, 235px
-    95px, 165px 150px, 195px 235px, 120px 180px, 50px 235px,75px
-    150px, 5px 95px)
-  }
-  50% {
-    clip-path: polygon(10px 10px, 120px 10px, 230px 10px, 230px
-    120px, 230px 180px, 230px 230px, 120px 230px, 10px 230px, 10px
-    180px, 10px 120px)
-  }
+.fill-the-bar {
+  transition: transform 2s;
+  transform: scaleY(1);
+  transform-origin: bottom;
+  stroke: none;
+  fill: green;
+  cursor: pointer;
 }
 
-.loader {
-  padding: 3px;
-  border: 3px solid blue;
-  width: 500px;
+.fill-the-bar:hover {
+  transform: scaleY(7.5);
+}
+
+.dominant-baseline-hanging {
+  dominant-baseline: hanging;
+}
+
+.dominant-baseline-middle {
+  dominant-baseline: middle;
+}
+
+.text-anchor-end {
+  text-anchor: end;
 }
